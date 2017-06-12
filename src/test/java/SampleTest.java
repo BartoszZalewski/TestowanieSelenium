@@ -38,8 +38,8 @@ public class SampleTest {
         findField.sendKeys("Selenium java tests examples");
         findField.sendKeys(Keys.ENTER);
 
-        //driver.close();
-        //driver.quit();
+        driver.close();
+        driver.quit();
     }
 
 }

@@ -1,5 +1,3 @@
-package Pesel;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -7,25 +5,29 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Pesel {
+public class NumberVerifierSiteHelper {
     private final String url = "http://zylla.wipos.p.lodz.pl/ut/js-pesel.html";
     private final String selectName = "numer";
-    private final String sectionValue = "0";
     private final String dataId = "dane";
     private final String checkButtonName = "go";
     private final String controlNumberFiledName = "wynik";
     private final String commentFieldName = "uwagi";
 
+    private String sectionValue = "2";
 
-    public String controlSumFieldValue(String pesel){
-        return getFieldValue(controlNumberFiledName, pesel);
+    public NumberVerifierSiteHelper(String sectionValue) {
+        this.sectionValue = sectionValue;
     }
 
-    public String getCommentFieldValue(String pesel){
-        return getFieldValue(commentFieldName, pesel);
+    public String controlSumFieldValue(String key){
+        return getFieldValue(controlNumberFiledName, key);
     }
 
-    private String getFieldValue(String fieldName, String pesel){
+    public String getCommentFieldValue(String key){
+        return getFieldValue(commentFieldName, key);
+    }
+
+    private String getFieldValue(String fieldName, String key){
         WebDriver driver = new ChromeDriver();
         driver.get(url);
 
@@ -35,7 +37,7 @@ public class Pesel {
 
         select.selectByValue(sectionValue);
         inputDataField.clear();
-        inputDataField.sendKeys(pesel);
+        inputDataField.sendKeys(key);
 
         inputDataField.sendKeys(Keys.ENTER);
 
@@ -46,5 +48,4 @@ public class Pesel {
 
         return result;
     }
-
 }

@@ -1,5 +1,3 @@
-package Pesel;
-
 import org.junit.Before;
 import org.junit.Test;
 import java.io.File;
@@ -11,6 +9,7 @@ public class PeselTests {
     private final String notEnoughDigits = "zbyt mało cyfr";
     private final String tooManyDigits = "za dużo cyfr";
     private final String incorrectDate = "błędna data";
+    private NumberVerifierSiteHelper numberVerifierSiteHelper = new NumberVerifierSiteHelper(Select.PESEL.value());
 
     @Before
     public void setUpProperty() throws IOException {
@@ -23,10 +22,8 @@ public class PeselTests {
     public void sampleValidTest(){
         String peselValue = "94112306312";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(correctControlSum);
         assert !comments.contains(incorrectDate);
@@ -36,7 +33,7 @@ public class PeselTests {
     public void correctControlSumLowerTest(){
         String peselValue = "97810100079";
 
-        String resultControlSum = new Pesel().controlSumFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
 
         assert resultControlSum.contains(correctControlSum);
     }
@@ -45,7 +42,7 @@ public class PeselTests {
     public void correctControlSumTest(){
         String peselValue = "17260799991";
 
-        String resultControlSum = new Pesel().controlSumFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
 
         assert resultControlSum.contains(correctControlSum);
     }
@@ -54,7 +51,7 @@ public class PeselTests {
     public void correctControlSumUpperTest(){
         String peselValue = "95113024133";
 
-        String resultControlSum = new Pesel().controlSumFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
 
         assert resultControlSum.contains(correctControlSum);
     }
@@ -63,7 +60,7 @@ public class PeselTests {
     public void notEnoughDigitsLowerTest(){
         String peselValue = "0";
 
-        String resultControlSum = new Pesel().controlSumFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
 
         assert resultControlSum.contains(notEnoughDigits);
     }
@@ -72,7 +69,7 @@ public class PeselTests {
     public void notEnoughDigitsUpperTest(){
         String peselValue = "9999999999";
 
-        String resultControlSum = new Pesel().controlSumFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
 
         assert resultControlSum.contains(notEnoughDigits);
     }
@@ -81,7 +78,7 @@ public class PeselTests {
     public void tooManyDigitsLowerTest(){
         String peselValue = "100000000000";
 
-        String resultControlSum = new Pesel().controlSumFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
 
         assert resultControlSum.contains(tooManyDigits);
     }
@@ -90,7 +87,7 @@ public class PeselTests {
     public void tooManyDigitsHighTest(){
         String peselValue = "999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999";
 
-        String resultControlSum = new Pesel().controlSumFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
 
         assert resultControlSum.contains(tooManyDigits);
     }
@@ -99,10 +96,8 @@ public class PeselTests {
     public void incorrectDayMonthAndControlSumLowerTest() {
         String peselValue = "00000000001";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(incorrectControlSum);
         assert comments.contains(incorrectDate);
@@ -113,10 +108,8 @@ public class PeselTests {
     public void incorrectDayMonthAndControlSumUpperTest() {
         String peselValue = "99939999999";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(incorrectControlSum);
         assert comments.contains(incorrectDate);
@@ -126,10 +119,8 @@ public class PeselTests {
     public void incorrectDayMonthLowerTest() {
         String peselValue = "00000000000";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(correctControlSum);
         assert comments.contains(incorrectDate);
@@ -139,10 +130,8 @@ public class PeselTests {
     public void incorrectDayMonthUpperTest() {
         String peselValue = "99939999992";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(correctControlSum);
         assert comments.contains(incorrectDate);
@@ -152,10 +141,8 @@ public class PeselTests {
     public void onlyCorrectMonthLowerTest() {
         String peselValue = "00010000000";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(incorrectControlSum);
         assert comments.contains(incorrectDate);
@@ -165,10 +152,8 @@ public class PeselTests {
     public void onlyCorrectMonthUpperTest() {
         String peselValue = "99929999999";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(incorrectControlSum);
         assert comments.contains(incorrectDate);
@@ -178,10 +163,8 @@ public class PeselTests {
     public void onlyCorrectDayLowerTest() {
         String peselValue = "00000100000";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(incorrectControlSum);
         assert comments.contains(incorrectDate);
@@ -191,10 +174,8 @@ public class PeselTests {
     public void onlyCorrectDayUpperTest() {
         String peselValue = "99993199999";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(incorrectControlSum);
         assert comments.contains(incorrectDate);
@@ -204,10 +185,8 @@ public class PeselTests {
     public void onlyCorrectDayAndControlSumLowerTest() {
         String peselValue = "00000100003";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(correctControlSum);
         assert comments.contains(incorrectDate);
@@ -217,10 +196,8 @@ public class PeselTests {
     public void onlyCorrectDayAndControlSumUpperTest() {
         String peselValue = "99993199996";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(correctControlSum);
         assert comments.contains(incorrectDate);
@@ -230,10 +207,8 @@ public class PeselTests {
     public void onlyCorrectMonthAndControlSumLowerTest() {
         String peselValue = "00010000009";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(correctControlSum);
         assert comments.contains(incorrectDate);
@@ -243,10 +218,8 @@ public class PeselTests {
     public void onlyCorrectMonthAndControlSumUpperTest() {
         String peselValue = "99929999993";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(correctControlSum);
         assert comments.contains(incorrectDate);
@@ -256,10 +229,8 @@ public class PeselTests {
     public void onlyCorrectDayAndMonthLowerTest() {
         String peselValue = "00010100001";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(incorrectControlSum);
         assert !comments.contains(incorrectDate);
@@ -269,10 +240,8 @@ public class PeselTests {
     public void onlyCorrectDayAndMonthUpperTest() {
         String peselValue = "99923199999";
 
-        Pesel pesel = new Pesel();
-
-        String resultControlSum = pesel.controlSumFieldValue(peselValue);
-        String comments = pesel.getCommentFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
+        String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
 
         assert resultControlSum.contains(incorrectControlSum);
         assert !comments.contains(incorrectDate);
@@ -282,7 +251,7 @@ public class PeselTests {
     public void notNumericalValueTest(){
         String peselValue = "XXXXXXXXXXX";
 
-        String resultControlSum = new Pesel().controlSumFieldValue(peselValue);
+        String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
 
         assert resultControlSum.contains(incorrectControlSum);
     }
