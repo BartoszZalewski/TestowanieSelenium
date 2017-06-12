@@ -19,7 +19,7 @@ public class NipTests {
     }
 
     @Test
-    public void sampleRegonTest(){
+    public void sampleNipTest(){
         String nipValue = "1234563218";
 
         String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(nipValue);
@@ -29,7 +29,7 @@ public class NipTests {
 
     @Test
     public void correctControlSumLowerTest(){
-        String nipValue = "1010000000";
+        String nipValue = "1010000002";
 
         String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(nipValue);
 

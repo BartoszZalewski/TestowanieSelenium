@@ -31,7 +31,7 @@ public class PeselTests {
 
     @Test
     public void correctControlSumLowerTest(){
-        String peselValue = "97810100079";
+        String peselValue = "97810100071";
 
         String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
 
@@ -40,7 +40,7 @@ public class PeselTests {
 
     @Test
     public void correctControlSumTest(){
-        String peselValue = "17260799991";
+        String peselValue = "17260799999";
 
         String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
 
@@ -49,7 +49,7 @@ public class PeselTests {
 
     @Test
     public void correctControlSumUpperTest(){
-        String peselValue = "95113024133";
+        String peselValue = "95113024137";
 
         String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
 
@@ -128,7 +128,7 @@ public class PeselTests {
 
     @Test
     public void incorrectDayMonthUpperTest() {
-        String peselValue = "99939999992";
+        String peselValue = "99939999998";
 
         String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
         String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
@@ -183,7 +183,7 @@ public class PeselTests {
 
     @Test
     public void onlyCorrectDayAndControlSumLowerTest() {
-        String peselValue = "00000100003";
+        String peselValue = "00000100007";
 
         String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
         String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
@@ -194,7 +194,7 @@ public class PeselTests {
 
     @Test
     public void onlyCorrectDayAndControlSumUpperTest() {
-        String peselValue = "99993199996";
+        String peselValue = "99993199994";
 
         String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
         String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
@@ -205,7 +205,7 @@ public class PeselTests {
 
     @Test
     public void onlyCorrectMonthAndControlSumLowerTest() {
-        String peselValue = "00010000009";
+        String peselValue = "00010000001";
 
         String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
         String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
@@ -216,7 +216,7 @@ public class PeselTests {
 
     @Test
     public void onlyCorrectMonthAndControlSumUpperTest() {
-        String peselValue = "99929999993";
+        String peselValue = "99929999997";
 
         String resultControlSum = numberVerifierSiteHelper.controlSumFieldValue(peselValue);
         String comments = numberVerifierSiteHelper.getCommentFieldValue(peselValue);
