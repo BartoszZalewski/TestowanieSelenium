@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="53c8b5b4-ad37-486c-961c-7339c1d4bc51" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Pesel/Pesel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-classes/Pesel/PeselTests.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Pesel/Pesel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/Pesel/PeselTests.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/PeselTests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/PeselTests.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="53c8b5b4-ad37-486c-961c-7339c1d4bc51" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +17,59 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SampleTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SampleTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/SampleTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+            <state relative-caret-position="408">
+              <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegonTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Regon/RegonTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="746">
+              <caret line="139" column="5" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="139" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Regon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Regon/Regon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="47" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Nip.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Nip/Nip.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NipTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Nip/NipTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,6 +105,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Pesel/PeselTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/Regon/Regon.java" />
         <option value="$PROJECT_DIR$/src/test/java/Regon/RegonTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Nip/Nip.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Nip/NipTests.java" />
       </list>
     </option>
   </component>
@@ -197,6 +239,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Nip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestowanieSelenium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestowanieSelenium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -228,46 +296,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RegonTests.correctControlSumButIncorrectStateNumberUpperTest">
-    <configuration default="false" name="PeselTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.NipTests.correctControlSumLowerTest">
+    <configuration default="false" name="NipTests.incorrectControlSumAndTaxOfficeIdLowerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Pesel.*" />
+          <option name="PATTERN" value="Nip.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="Testowanie" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Pesel" />
-      <option name="MAIN_CLASS_NAME" value="Pesel.PeselTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="RegonTests.notEnoughDigitsUpperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Regon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Testowanie" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Regon" />
-      <option name="MAIN_CLASS_NAME" value="Regon.RegonTests" />
-      <option name="METHOD_NAME" value="notEnoughDigitsUpperTest" />
+      <option name="PACKAGE_NAME" value="Nip" />
+      <option name="MAIN_CLASS_NAME" value="Nip.NipTests" />
+      <option name="METHOD_NAME" value="incorrectControlSumAndTaxOfficeIdLowerTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -281,18 +323,44 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="RegonTests.incorrectNumericalValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="NipTests.incorrectControlSumAndTaxOfficeIdUpperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Regon.*" />
+          <option name="PATTERN" value="Nip.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="Testowanie" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Regon" />
-      <option name="MAIN_CLASS_NAME" value="Regon.RegonTests" />
+      <option name="PACKAGE_NAME" value="Nip" />
+      <option name="MAIN_CLASS_NAME" value="Nip.NipTests" />
+      <option name="METHOD_NAME" value="incorrectControlSumAndTaxOfficeIdUpperTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="NipTests.incorrectNumericalValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Nip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Testowanie" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="Nip" />
+      <option name="MAIN_CLASS_NAME" value="Nip.NipTests" />
       <option name="METHOD_NAME" value="incorrectNumericalValue" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -307,20 +375,20 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="RegonTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="NipTests.notEnoughDigitsUpperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Regon.*" />
+          <option name="PATTERN" value="Nip.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="Testowanie" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Regon" />
-      <option name="MAIN_CLASS_NAME" value="Regon.RegonTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="Nip" />
+      <option name="MAIN_CLASS_NAME" value="Nip.NipTests" />
+      <option name="METHOD_NAME" value="notEnoughDigitsUpperTest" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -333,19 +401,19 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="RegonTests.correctControlSumButIncorrectStateNumberUpperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="NipTests.correctControlSumLowerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Regon.*" />
+          <option name="PATTERN" value="Nip.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="Testowanie" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Regon" />
-      <option name="MAIN_CLASS_NAME" value="Regon.RegonTests" />
-      <option name="METHOD_NAME" value="correctControlSumButIncorrectStateNumberUpperTest" />
+      <option name="PACKAGE_NAME" value="Nip" />
+      <option name="MAIN_CLASS_NAME" value="Nip.NipTests" />
+      <option name="METHOD_NAME" value="correctControlSumLowerTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -820,19 +888,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.PeselTests" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.RegonTests.notEnoughDigitsUpperTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.RegonTests.incorrectNumericalValue" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.RegonTests" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.RegonTests.correctControlSumButIncorrectStateNumberUpperTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.NipTests.incorrectControlSumAndTaxOfficeIdLowerTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.NipTests.incorrectControlSumAndTaxOfficeIdUpperTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.NipTests.incorrectNumericalValue" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.NipTests.notEnoughDigitsUpperTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.NipTests.correctControlSumLowerTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RegonTests.correctControlSumButIncorrectStateNumberUpperTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RegonTests" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RegonTests.incorrectNumericalValue" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RegonTests.notEnoughDigitsUpperTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PeselTests" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.NipTests.correctControlSumLowerTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.NipTests.notEnoughDigitsUpperTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.NipTests.incorrectNumericalValue" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.NipTests.incorrectControlSumAndTaxOfficeIdUpperTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.NipTests.incorrectControlSumAndTaxOfficeIdLowerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -853,28 +921,31 @@
       <updated>1496779115187</updated>
       <workItem from="1496779119379" duration="4391000" />
       <workItem from="1496934324520" duration="3139000" />
-      <workItem from="1497278141174" duration="7137000" />
+      <workItem from="1497278141174" duration="9022000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PeselTests - 2017.06.12 at 18h 08m 25s.xml">
-      <configuration name="PeselTests" configurationId="JUnit" />
+    <history-entry file="NipTests - 2017.06.12 at 18h 56m 19s.xml">
+      <configuration name="NipTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PeselTests_notNumericalValueTest - 2017.06.12 at 18h 03m 44s.xml">
-      <configuration name="PeselTests.notNumericalValueTest" configurationId="JUnit" />
+    <history-entry file="NipTests - 2017.06.12 at 18h 57m 46s.xml">
+      <configuration name="NipTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PeselTests_notNumericalValueTest - 2017.06.12 at 18h 03m 58s.xml">
-      <configuration name="PeselTests.notNumericalValueTest" configurationId="JUnit" />
+    <history-entry file="NipTests_incorrectControlSumAndTaxOfficeIdLowerTest - 2017.06.12 at 19h 05m 01s.xml">
+      <configuration name="NipTests.incorrectControlSumAndTaxOfficeIdLowerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PeselTests_notNumericalValueTest - 2017.06.12 at 18h 04m 48s.xml">
-      <configuration name="PeselTests.notNumericalValueTest" configurationId="JUnit" />
+    <history-entry file="NipTests_incorrectControlSumAndTaxOfficeIdUpperTest - 2017.06.12 at 19h 05m 17s.xml">
+      <configuration name="NipTests.incorrectControlSumAndTaxOfficeIdUpperTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PeselTests_notNumericalValueTest - 2017.06.12 at 18h 04m 53s.xml">
-      <configuration name="PeselTests.notNumericalValueTest" configurationId="JUnit" />
+    <history-entry file="NipTests_incorrectControlSumAndTaxOfficeIdUpperTest - 2017.06.12 at 19h 05m 52s.xml">
+      <configuration name="NipTests.incorrectControlSumAndTaxOfficeIdUpperTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PeselTests_onlyCorrectDayAndMonthLowerTest - 2017.06.12 at 18h 00m 39s.xml">
-      <configuration name="PeselTests.onlyCorrectDayAndMonthLowerTest" configurationId="JUnit" />
+    <history-entry file="NipTests_incorrectNumericalValue - 2017.06.12 at 19h 05m 52s.xml">
+      <configuration name="NipTests.incorrectNumericalValue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NipTests_notEnoughDigitsUpperTest - 2017.06.12 at 19h 06m 00s.xml">
+      <configuration name="NipTests.notEnoughDigitsUpperTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RegonTests - 2017.06.12 at 18h 22m 41s.xml">
       <configuration name="RegonTests" configurationId="JUnit" />
@@ -882,15 +953,12 @@
     <history-entry file="RegonTests_correctControlSumButIncorrectStateNumberUpperTest - 2017.06.12 at 18h 29m 09s.xml">
       <configuration name="RegonTests.correctControlSumButIncorrectStateNumberUpperTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RegonTests_incorrectNumericalValue - 2017.06.12 at 18h 20m 47s.xml">
-      <configuration name="RegonTests.incorrectNumericalValue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RegonTests_notEnoughDigitsUpperTest - 2017.06.12 at 18h 18m 29s.xml">
-      <configuration name="RegonTests.notEnoughDigitsUpperTest" configurationId="JUnit" />
+    <history-entry file="RegonTests_correctControlSumButIncorrectStateNumberUpperTest - 2017.06.12 at 18h 37m 53s.xml">
+      <configuration name="RegonTests.correctControlSumButIncorrectStateNumberUpperTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14667000" />
+    <option name="totallyTimeSpent" value="16552000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
@@ -906,7 +974,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1037,10 +1105,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regon/RegonTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/SampleTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" lean-forward="false" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="408">
+          <caret line="24" column="23" lean-forward="true" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1049,22 +1117,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regon/Regon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="39" lean-forward="true" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
+        <state relative-caret-position="731">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#702#703#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/SampleTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regon/RegonTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="42" lean-forward="false" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        <state relative-caret-position="746">
+          <caret line="139" column="5" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="139" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Nip/Nip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Nip/NipTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
